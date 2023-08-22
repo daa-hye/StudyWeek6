@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="n8l-9q-8r4">
             <objects>
-                <viewController id="VRe-nq-1mh" sceneMemberID="viewController">
+                <viewController id="VRe-nq-1mh" customClass="SecondViewController" customModule="StudyWeek6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4zO-GB-1ow">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
