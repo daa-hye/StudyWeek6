@@ -20,6 +20,7 @@
 		5326A4D82A94986000A8BD4B /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4D72A94986000A8BD4B /* ExampleViewController.swift */; };
 		5326A4DA2A94987100A8BD4B /* Example.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5326A4D92A94987100A8BD4B /* Example.storyboard */; };
 		5326A4DC2A94A02400A8BD4B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4DB2A94A02400A8BD4B /* SecondViewController.swift */; };
+		5326A4DE2A95829C00A8BD4B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4DD2A95829C00A8BD4B /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		5326A4D72A94986000A8BD4B /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		5326A4D92A94987100A8BD4B /* Example.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Example.storyboard; sourceTree = "<group>"; };
 		5326A4DB2A94A02400A8BD4B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5326A4DD2A95829C00A8BD4B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				5326A4D72A94986000A8BD4B /* ExampleViewController.swift */,
 				5326A4DB2A94A02400A8BD4B /* SecondViewController.swift */,
+				5326A4DD2A95829C00A8BD4B /* ThirdViewController.swift */,
 				5326A4D92A94987100A8BD4B /* Example.storyboard */,
 			);
 			path = Assignment;
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5326A4DC2A94A02400A8BD4B /* SecondViewController.swift in Sources */,
+				5326A4DE2A95829C00A8BD4B /* ThirdViewController.swift in Sources */,
 				5326A4D32A945CBF00A8BD4B /* TextViewController.swift in Sources */,
 				5326A4D12A94467800A8BD4B /* SnapViewController.swift in Sources */,
 				5326A4BB2A930A1200A8BD4B /* ViewController.swift in Sources */,
@@ -338,6 +342,7 @@
 				DEVELOPMENT_TEAM = KLYH4UN5ZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StudyWeek6/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -369,6 +374,7 @@
 				DEVELOPMENT_TEAM = KLYH4UN5ZC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StudyWeek6/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
