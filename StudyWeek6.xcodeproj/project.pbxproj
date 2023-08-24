@@ -25,6 +25,8 @@
 		5326A4F32A971CE100A8BD4B /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4F22A971CE100A8BD4B /* CustomViewController.swift */; };
 		5326A4F52A971E5900A8BD4B /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4F42A971E5900A8BD4B /* BlackRadiusTextField.swift */; };
 		5326A4F92A972A3A00A8BD4B /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4F82A972A3A00A8BD4B /* CustomTableViewController.swift */; };
+		5326A4FB2A976C6800A8BD4B /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4FA2A976C6800A8BD4B /* SignInTextField.swift */; };
+		5326A4FD2A976D5800A8BD4B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4FC2A976D5800A8BD4B /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		5326A4F22A971CE100A8BD4B /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		5326A4F42A971E5900A8BD4B /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
 		5326A4F82A972A3A00A8BD4B /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		5326A4FA2A976C6800A8BD4B /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
+		5326A4FC2A976D5800A8BD4B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				5326A4DB2A94A02400A8BD4B /* SecondViewController.swift */,
 				5326A4DD2A95829C00A8BD4B /* ThirdViewController.swift */,
 				5326A4D92A94987100A8BD4B /* Example.storyboard */,
+				5326A4FA2A976C6800A8BD4B /* SignInTextField.swift */,
+				5326A4FC2A976D5800A8BD4B /* SignInViewController.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -223,7 +229,9 @@
 				5326A4D82A94986000A8BD4B /* ExampleViewController.swift in Sources */,
 				5326A4F52A971E5900A8BD4B /* BlackRadiusTextField.swift in Sources */,
 				5326A4B72A930A1200A8BD4B /* AppDelegate.swift in Sources */,
+				5326A4FD2A976D5800A8BD4B /* SignInViewController.swift in Sources */,
 				5326A4F92A972A3A00A8BD4B /* CustomTableViewController.swift in Sources */,
+				5326A4FB2A976C6800A8BD4B /* SignInTextField.swift in Sources */,
 				5326A4B92A930A1200A8BD4B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
