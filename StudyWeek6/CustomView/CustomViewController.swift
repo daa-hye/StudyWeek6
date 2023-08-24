@@ -6,24 +6,43 @@
 //
 
 import UIKit
+import SnapKit
 
 class CustomViewController: UIViewController {
+
+    let idTextField = {
+        let view = BlackRadiusTextField()
+        view.placeholder = "아이디를 입력해주세요"
+        return view
+    }()
+
+    let passwordTextField = {
+        let view = BlackRadiusTextField()
+        view.placeholder = "아이디를 입력해주세요"
+        return view
+    }()
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        view.addSubview(idTextField)
+        idTextField.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.equalTo(300)
+            make.height.equalTo(50)
+        }
+
+        view.addSubview(passwordTextField)
+        passwordTextField.snp.makeConstraints { make in
+            make.center.equalToSuperview().offset(100)
+            make.width.equalTo(300)
+            make.height.equalTo(50)
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
