@@ -72,10 +72,12 @@ class ViewController: UIViewController {
 
     @objc func signButtonClicked() {
 
-        let vc = LocationViewController()
-        let nav = UINavigationController(rootViewController: vc)
+//        let vc = TextViewController()
+//        let nav = UINavigationController(rootViewController: vc)
+//
+//        present(nav, animated: true)
 
-        present(nav, animated: true)
+        transition(viewController: GenericViewController.self, storyboard: "Main", style: .presentNavigation)
 
     }
 
