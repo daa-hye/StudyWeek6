@@ -10,6 +10,13 @@ import SnapKit
 
 class SignInViewController: UIViewController {
 
+    let alertLabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.textColor = .magenta
+        return label
+    }()
+
     let titleLabel = {
         let label = UILabel()
         label.text = "HYEFLIX"
@@ -54,7 +61,7 @@ class SignInViewController: UIViewController {
         let button = UIButton()
         button.setTitle("회원가입", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .lightGray
         button.layer.cornerRadius = 6
 
         return button
@@ -62,10 +69,16 @@ class SignInViewController: UIViewController {
 
     var stackView: UIStackView!
 
+    var viewModel = SigninViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        stackView = UIStackView(arrangedSubviews: [idTextField, passwordTextField, nicknameTextField, locationTextField, codeTextField])
+
         setUI()
+        addAction()
+        bindData()
+
+        signInButton.isEnabled = false
 
     }
 
@@ -73,9 +86,47 @@ class SignInViewController: UIViewController {
 
 extension SignInViewController {
 
+    func bindData() {
+
+        // ???: 나중에 질문..
+        viewModel.alertMent.bind { text in
+            if text == "" {
+                self.alertLabel.isHidden = true
+            } else {
+                self.alertLabel.isHidden = false
+                self.alertLabel.text = text
+            }
+        }
+
+    }
+
+    func addAction() {
+        for textField in [idTextField, passwordTextField, nicknameTextField, locationTextField, codeTextField] {
+            textField.addTarget(self, action: #selector(inputCheck), for: .editingChanged)
+        }
+    }
+
+    @objc func inputCheck() {
+
+        viewModel.id.value = idTextField.text
+        viewModel.password.value = passwordTextField.text
+        viewModel.nickname.value = nicknameTextField.text
+        viewModel.location.value = locationTextField.text
+        viewModel.code.value = codeTextField.text
+
+
+        if viewModel.checkValidation() {
+            signInButton.backgroundColor = .white
+            signInButton.isEnabled = true
+        }
+
+    }
+
     func setUI() {
 
         view.backgroundColor = .black
+
+        stackView = UIStackView(arrangedSubviews: [alertLabel, idTextField, passwordTextField, nicknameTextField, locationTextField, codeTextField])
 
         view.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in

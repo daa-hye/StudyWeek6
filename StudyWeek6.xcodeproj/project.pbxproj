@@ -27,6 +27,11 @@
 		5326A4F92A972A3A00A8BD4B /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4F82A972A3A00A8BD4B /* CustomTableViewController.swift */; };
 		5326A4FB2A976C6800A8BD4B /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4FA2A976C6800A8BD4B /* SignInTextField.swift */; };
 		5326A4FD2A976D5800A8BD4B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4FC2A976D5800A8BD4B /* SignInViewController.swift */; };
+		5326A4FF2A982B0500A8BD4B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A4FE2A982B0500A8BD4B /* CustomTableViewCell.swift */; };
+		5326A5012A9840AD00A8BD4B /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5002A9840AD00A8BD4B /* PosterImageView.swift */; };
+		5326A5042A984B5700A8BD4B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326A5032A984B5700A8BD4B /* OnboardingViewController.swift */; };
+		53D5CD9F2AB82B9E0064CB3B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5CD9E2AB82B9E0064CB3B /* Observable.swift */; };
+		53D5CDA22AB82BED0064CB3B /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D5CDA12AB82BED0064CB3B /* SigninViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		5326A4F82A972A3A00A8BD4B /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		5326A4FA2A976C6800A8BD4B /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
 		5326A4FC2A976D5800A8BD4B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5326A4FE2A982B0500A8BD4B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5326A5002A9840AD00A8BD4B /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		5326A5032A984B5700A8BD4B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		53D5CD9E2AB82B9E0064CB3B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		53D5CDA12AB82BED0064CB3B /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,7 @@
 		5326A4B52A930A1200A8BD4B /* StudyWeek6 */ = {
 			isa = PBXGroup;
 			children = (
+				5326A5022A984B0C00A8BD4B /* Onboarding */,
 				5326A4F12A971CB600A8BD4B /* CustomView */,
 				5326A4EC2A96F0E800A8BD4B /* Generic */,
 				5326A4D62A94982800A8BD4B /* Assignment */,
@@ -111,12 +122,11 @@
 		5326A4D62A94982800A8BD4B /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				53D5CDA02AB82BC70064CB3B /* Netflix */,
 				5326A4D72A94986000A8BD4B /* ExampleViewController.swift */,
 				5326A4DB2A94A02400A8BD4B /* SecondViewController.swift */,
 				5326A4DD2A95829C00A8BD4B /* ThirdViewController.swift */,
 				5326A4D92A94987100A8BD4B /* Example.storyboard */,
-				5326A4FA2A976C6800A8BD4B /* SignInTextField.swift */,
-				5326A4FC2A976D5800A8BD4B /* SignInViewController.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -134,10 +144,31 @@
 			isa = PBXGroup;
 			children = (
 				5326A4F22A971CE100A8BD4B /* CustomViewController.swift */,
+				5326A5002A9840AD00A8BD4B /* PosterImageView.swift */,
 				5326A4F42A971E5900A8BD4B /* BlackRadiusTextField.swift */,
 				5326A4F82A972A3A00A8BD4B /* CustomTableViewController.swift */,
+				5326A4FE2A982B0500A8BD4B /* CustomTableViewCell.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		5326A5022A984B0C00A8BD4B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5326A5032A984B5700A8BD4B /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		53D5CDA02AB82BC70064CB3B /* Netflix */ = {
+			isa = PBXGroup;
+			children = (
+				5326A4FC2A976D5800A8BD4B /* SignInViewController.swift */,
+				5326A4FA2A976C6800A8BD4B /* SignInTextField.swift */,
+				53D5CD9E2AB82B9E0064CB3B /* Observable.swift */,
+				53D5CDA12AB82BED0064CB3B /* SigninViewModel.swift */,
+			);
+			path = Netflix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,16 +251,21 @@
 				5326A4DC2A94A02400A8BD4B /* SecondViewController.swift in Sources */,
 				5326A4DE2A95829C00A8BD4B /* ThirdViewController.swift in Sources */,
 				5326A4EE2A96F11100A8BD4B /* GenericViewController.swift in Sources */,
+				53D5CDA22AB82BED0064CB3B /* SigninViewModel.swift in Sources */,
 				5326A4F32A971CE100A8BD4B /* CustomViewController.swift in Sources */,
+				5326A5042A984B5700A8BD4B /* OnboardingViewController.swift in Sources */,
 				5326A4D32A945CBF00A8BD4B /* TextViewController.swift in Sources */,
 				5326A4F02A96F12C00A8BD4B /* Extension+ViewController.swift in Sources */,
 				5326A4D12A94467800A8BD4B /* SnapViewController.swift in Sources */,
 				5326A4BB2A930A1200A8BD4B /* ViewController.swift in Sources */,
 				5326A4D52A94793A00A8BD4B /* LocationViewController.swift in Sources */,
+				5326A4FF2A982B0500A8BD4B /* CustomTableViewCell.swift in Sources */,
 				5326A4D82A94986000A8BD4B /* ExampleViewController.swift in Sources */,
 				5326A4F52A971E5900A8BD4B /* BlackRadiusTextField.swift in Sources */,
 				5326A4B72A930A1200A8BD4B /* AppDelegate.swift in Sources */,
+				5326A5012A9840AD00A8BD4B /* PosterImageView.swift in Sources */,
 				5326A4FD2A976D5800A8BD4B /* SignInViewController.swift in Sources */,
+				53D5CD9F2AB82B9E0064CB3B /* Observable.swift in Sources */,
 				5326A4F92A972A3A00A8BD4B /* CustomTableViewController.swift in Sources */,
 				5326A4FB2A976C6800A8BD4B /* SignInTextField.swift in Sources */,
 				5326A4B92A930A1200A8BD4B /* SceneDelegate.swift in Sources */,

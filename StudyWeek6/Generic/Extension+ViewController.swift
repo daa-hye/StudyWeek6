@@ -22,7 +22,6 @@ extension UIViewController {
      */
 
     func transition<T: UIViewController>(viewController: T.Type, storyboard: String, style: TransitionStyle) {
-
         let sb = UIStoryboard(name: storyboard, bundle: nil)
         guard let vc = sb.instantiateViewController(withIdentifier: String(describing: viewController)) as? T else { return }
 

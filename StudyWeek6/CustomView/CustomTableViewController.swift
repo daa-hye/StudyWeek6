@@ -15,9 +15,20 @@ struct Sample {
 
 class CustomTableViewController: UIViewController {
 
-    let tableView = {
+    //viewDidLoad 보다 클로저 구문이 먼저 실행됨
+    //class 인스턴스 생성 직전에 클로저 구문이 우선 실행
+    lazy var tableView = {
         let view = UITableView()
         view.rowHeight = UITableView.automaticDimension // 1.
+        view.delegate = self
+        view.dataSource = self
+        // uinib - xib
+        view.register(CustomTableViewCell.self, forCellReuseIdentifier: "customCell")
+        return view
+    }()
+
+    let imageView = {
+        let view = PosterImageView(frame: .zero)
         return view
     }()
 
@@ -33,10 +44,11 @@ class CustomTableViewController: UIViewController {
             make.edges.equalToSuperview()
         }
 
-        tableView.delegate = self
-        tableView.dataSource = self
-        // uinib - xib
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "customCell")
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints { make in
+            make.size.equalTo(200)
+            make.center.equalTo(view)
+        }
     }
 
 }
@@ -48,7 +60,7 @@ extension CustomTableViewController: UITableViewDelegate, UITableViewDataSource 
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell") as! CustomTableViewCell
         cell.textLabel?.text = list[indexPath.row].text
         cell.textLabel?.numberOfLines = list[indexPath.row].isExpand ? 0 : 2
         return cell

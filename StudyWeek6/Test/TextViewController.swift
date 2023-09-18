@@ -70,9 +70,10 @@ class TextViewController: UIViewController {
 //        picker.allowsEditing = true
 
         //let picker = UIFontPickerViewController()
-        let picker = UIColorPickerViewController()
+        //let picker = UIColorPickerViewController()
 
-        present(picker, animated: true)
+
+
     }
 
     func setupConstraints() {
